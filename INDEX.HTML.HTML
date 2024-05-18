@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akirul Islam - Design Engineer Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .contact-info, .section {
+            margin-bottom: 20px;
+        }
+        .contact-info p, .section p {
+            margin: 5px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Akirul Islam</h1>
+            <div class="contact-info">
+                <p>Phone: +91 76360-78597</p>
+                <p>Email: akirulislam787@gmail.com</p>
+                <p>Portfolio: <a href="https://www.artstation.com/akirul8" target="_blank">artstation.com/akirul8</a></p>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Fresher with solid skills in 3D mold design using NX software. Experienced in 2D detailing and design modification. Seeking a full-time, permanent position as a Design Engineer to contribute to new plastic mold development in the petrochemical, plastics, or rubber industry.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <p><strong>Diploma in Plastic Mould Technology</strong><br>
+               CIPET Guwahati<br>
+               Current Marks: 87.44% (up to 5th Semester)</p>
+            <p><strong>10th Standard</strong><br>
+               SEBA, 2021<br>
+               Marks: 58.33%</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li><strong>Design Software:</strong> NX, AutoCAD</li>
+                <li><strong>Mold Design:</strong> 3D mold design, 2D detailing, design modification</li>
+                <li><strong>Tools & Equipment:</strong> Lathe machines, milling machines, measuring instruments</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <p><strong>Design Engineer</strong><br>
+               HyperQom Infra Service LLP<br>
+               January 14, 2024 – Present</p>
+            <ul>
+                <li>Company installs solar panels at cell tower sites.</li>
+                <li>Responsible for making 2D and 3D designs for visualizing and planning solar structures.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <p><strong>Ayurvedic Cab Mould Design and Manufacturing</strong></p>
+            <ul>
+                <li><strong>Tools Used:</strong> NX software</li>
+                <li><strong>Responsibilities:</strong> Designed and manufactured Ayurvedic cab mould independently.</li>
+                <li><strong>Outcome:</strong> Successfully developed a mould meeting specific requirements and standards.</li>
+            </ul>
+            <p><strong>Other Mould Design Projects</strong></p>
+            <ul>
+                <li>Designed and manufactured moulds for card holders and PET bottles.</li>
+                <li>Created mould designs individually, ensuring high quality and efficiency.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Field of Interest</h2>
+            <ul>
+                <li>3D Mold Design</li>
+                <li>Plastic Mold Development</li>
+                <li>Manufacturing Technology</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Strengths & Hobbies</h2>
+            <ul>
+                <li>Positive attitude</li>
+                <li>Attention to detail</li>
+                <li>Quick learner</li>
+                <li>Enthusiastic about football and cricket</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Personal Information</h2>
+            <p><strong>Name:</strong> Akirul Islam</p>
+            <p><strong>DOB:</strong> 29/09/2001</p>
+            <p><strong>Address:</strong> Vill-Satipur, P.O.+P.S. – Dhaligaon, Dist – Chirang, Assam, 783385</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Declaration</h2>
+            <p>I hereby declare that the information furnished above is true and correct to the best of my knowledge and belief.</p>
+            <p><strong>Place:</strong> Guwahati</p>
+            <p><strong>Date:</strong> <span id="current-date"></span></p>
+            <p><strong>Signature:</strong> Akirul Islam</p>
+        </section>
+    </div>
+
+    <script>
+        // This script dynamically updates the date to the current date in the format DD/MM/YYYY
+        const date = new Date();
+        const formattedDate = ('0' + date.getDate()).slice(-2) + '/' + ('0' + (date.getMonth() + 1)).slice(-2) + '/' + date.getFullYear();
+        document.getElementById('current-date').textContent = formattedDate;
+    </script>
+</body>
+</html>
+0
